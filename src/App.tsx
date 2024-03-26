@@ -1,19 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import "./App.css";
+import SocialMedia from "./pages/SocialMedia";
+import GoogleForm from "./pages/GoogleForm";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>SEASTREL INTERNATIONAL LTD</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/social" element={<SocialMedia />} />
+          <Route path="/survey" element={<GoogleForm />} />
+          {/* <Route path="*" element={<PageNotFound />} /> */}
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
