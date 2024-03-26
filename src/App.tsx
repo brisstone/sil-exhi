@@ -13,7 +13,6 @@ function App() {
         <Routes>
           <Route path="/social" element={<SocialMedia />} />
           <Route path="/survey" element={<GoogleForm />} />
-          {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </>
