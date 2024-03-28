@@ -1,14 +1,15 @@
-import { useState } from "react";
-
 export default function GoogleForm() {
-  const [count, setCount] = useState(0);
   return (
     <div>
-      GoogleForm
-      <h1>SEASTREL INTERNATIONAL LTD</h1>
+      <div style={{ fontSize: "30px", fontWeight: 600 }}>
+        SEASTREL INTERNATIONAL LTD
+      </div>
+
       <div className="card">
-        <button onClick={() => setCount((count: number) => count + 1)}>
-          count is {count}
+        <button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3v1Gl3Xu5Eqdy57tKdCo77-Esse3_JjuiuzC4MFxjbNu_Zw/viewform?usp=sf_link">
+            SIGN UP
+          </a>
         </button>
       </div>
     </div>
