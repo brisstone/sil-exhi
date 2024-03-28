@@ -5,7 +5,19 @@ import Logo from "../../public/seastrel-logo.jpeg";
 
 export default function SocialMedia() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+    <div
+      style={{
+        width: "100%",
+        // height: '100vh',
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "30px",
+        // border: '2px solid red'
+      }}
+    >
+      <div style={{ fontSize: "30px", fontWeight: 600 }}>SEASTREL SOCIALS</div>
       <div
         style={{
           cursor: "pointer",
@@ -13,7 +25,8 @@ export default function SocialMedia() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
-          gap: "50px"
+          gap: "34px",
+          // border: '2px solid red'
         }}
       >
         <a
@@ -44,12 +57,19 @@ export default function SocialMedia() {
           <BsTwitterX size="40px" />
         </a>
       </div>
-      <h1>SEASTREL INTERNATIONAL LTD</h1>
-      <img
-        src={Logo}
-        alt="Seastrel Logo"
-        style={{ maxWidth: "600px", maxHeight: "300px" }}
-      />
+
+      <div
+        style={{
+          maxWidth: "300px",
+          // border: '2px solid red'
+        }}
+      >
+        <img
+          src={Logo}
+          alt="Seastrel Logo"
+          style={{ width: "100%", maxHeight: "300px" }}
+        />
+      </div>
     </div>
   );
 }
