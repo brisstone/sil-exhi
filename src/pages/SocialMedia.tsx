@@ -36,7 +36,7 @@ export default function SocialMedia() {
           className="icon-hover "
           style={{ color: "skyblue" }}
         >
-          <FaFacebook size="40px" />
+          <FaFacebook size="40px"/>
         </a>
         <a
           href="https://www.instagram.com/seastrelhq"
@@ -45,7 +45,7 @@ export default function SocialMedia() {
           className="icon-hover"
           style={{ color: "skyblue" }}
         >
-          <BsInstagram size="40px" />
+          <BsInstagram size="40px"/>
         </a>
         <a
           href="https://twitter.com/seastrelhq"
